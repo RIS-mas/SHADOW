@@ -1,25 +1,71 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Orbitron', monospace;
-    color: #e0e0e0;
-    overflow-x: hidden;
-    min-height: 100vh;
+    font-family: 'Orbitron', sans-serif;
+    background: #0a0a0a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.bg-animation {
+/* BACKGROUND GLOW */
+.bg {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+    background: radial-gradient(circle at center, #1a1a1a, #000);
     z-index: -1;
-    overflow: hidden;
 }
 
-.bg-layer {
-    position: absolute
+/* HERO */
+.hero {
+    text-align: center;
+}
+
+/* TITLE */
+h1 {
+    font-size: 60px;
+    text-shadow: 0 0 20px #fff;
+}
+
+h2 {
+    margin-top: 10px;
+    color: #aaa;
+}
+
+/* TAGLINE */
+.tagline {
+    margin: 15px 0;
+    opacity: 0.8;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* PRIMARY */
+.primary {
+    background: #5865F2;
+    color: white;
+}
+
+/* SECONDARY */
+.secondary {
+    border: 1px solid white;
+    color: white;
+}
+
+/* HOVER EFFECT */
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #5865F2;
+}
